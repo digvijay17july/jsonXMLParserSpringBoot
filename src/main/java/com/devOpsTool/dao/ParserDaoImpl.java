@@ -49,11 +49,17 @@ public class ParserDaoImpl implements ParserDao {
                 "\"username\":\"digvijay17july\",\n" +
                 "\"age\":55.0\n" +
                 "}";
+        /*
+
+         //Uncomment this file to add server call
+
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-        ResponseEntity<String> responseEntity = restTemplate.exchange(toolConfiguration.getServerProperties().get("url"), HttpMethod.POST, new HttpEntity<String>(body, httpHeaders), String.class);
+        ResponseEntity<String> responseEntity = restTemplate.exchange(toolConfiguration.getServerProperties().get("url"), HttpMethod.POST, new HttpEntity<String>(null, httpHeaders), String.class);
+        body=responseEntity.getBody();
+        */
         LOGGER.info("EXit.. ParserDaoImpl.getDataFromServer");
-        return responseEntity.getBody();
+        return body;
     }
 
     @Override
