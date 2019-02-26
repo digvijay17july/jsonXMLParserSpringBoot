@@ -1,4 +1,4 @@
-# jsonXMLParserSpringBoot
+# Json XML Parser SpringBoot
 
 # Steps for mock data:- <br>
 * Import as Maven Project <br>
