@@ -1,6 +1,6 @@
 # jsonXMLParserSpringBoot
 
-#Steps for mock data:- <br>
+# Steps for mock data:- <br>
 *Import as Maven Project <br>
 *Edit Path and properties in application.properies <br>
 *Run File JsonToXmlParserApplication as java main application <br>
