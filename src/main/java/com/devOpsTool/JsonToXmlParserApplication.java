@@ -1,7 +1,6 @@
 package com.devOpsTool;
 
 import com.devOpsTool.service.ParserService;
-import com.devOpsTool.service.ParserServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
