@@ -1,8 +1,8 @@
 package com.devOpsTool.jamadomain.stagingresources;
 
 import com.devOpsTool.exception.RestClientException;
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.jamadomain.lazyresources.JamaItem;
 import com.devOpsTool.jamadomain.lazyresources.JamaRelationship;
 import com.devOpsTool.jamadomain.lazyresources.JamaRelationshipType;
@@ -57,7 +57,7 @@ public class StagingRelationship extends JamaRelationship implements StagingReso
     }
 
     @Override
-    protected void copyContentFrom(JamaDomainObject jamaDomainObject) {
+    public void copyContentFrom(JamaDomainObject jamaDomainObject) {
         super.copyContentFrom(jamaDomainObject);
     }
 

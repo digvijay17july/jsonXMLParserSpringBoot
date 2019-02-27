@@ -1,7 +1,7 @@
 package com.devOpsTool.jamadomain.lazyresources;
 
 import com.devOpsTool.exception.RestClientException;
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaDomainObject;
 import com.devOpsTool.jamadomain.core.LazyResource;
 import com.devOpsTool.jamadomain.stagingresources.StagingRelationship;
 
@@ -17,7 +17,7 @@ public class JamaRelationship extends LazyResource {
     }
 
     @Override
-    protected void copyContentFrom(JamaDomainObject jamaDomainObject) {
+    public void copyContentFrom(JamaDomainObject jamaDomainObject) {
         checkType(JamaRelationship.class, jamaDomainObject);
 
         JamaRelationship jamaRelationship = (JamaRelationship)jamaDomainObject;

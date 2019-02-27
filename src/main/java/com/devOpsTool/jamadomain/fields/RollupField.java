@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.RollupFieldValue;
+import com.devOpsTool.jamadomain.values.RollupFieldValue;
 
 public class RollupField extends JamaField {
     @Override

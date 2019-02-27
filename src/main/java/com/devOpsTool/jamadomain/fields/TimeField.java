@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.TimeFieldValue;
+import com.devOpsTool.jamadomain.values.TimeFieldValue;
 
 public class TimeField extends JamaField {
     @Override

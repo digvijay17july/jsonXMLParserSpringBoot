@@ -1,5 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
-import com.jamasoftware.services.restclient.jamadomain.values.ProjectFieldValue;
+
+import com.devOpsTool.jamadomain.values.ProjectFieldValue;
 
 public class ProjectField extends JamaField {
     @Override

@@ -30,6 +30,21 @@ public class JamaConfig {
     private String openUrlBase;
     private String apiKey = null;
 
+    @Value("${serverProperties.resource}")
+    private String resource;
+
+    public ParserDao getParserDao() {
+        return parserDao;
+    }
+
+    public String getResource() {
+        return resource;
+    }
+
+    public void setResource(String resource) {
+        this.resource = resource;
+    }
+
     public JamaConfig() {
         json = new SimpleJsonHandler();
     }

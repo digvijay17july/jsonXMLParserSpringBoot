@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.URLFieldValue;
+import com.devOpsTool.jamadomain.values.URLFieldValue;
 
 public class URLField extends JamaField {
     @Override

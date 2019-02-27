@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.lazyresources;
 
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaDomainObject;
 import com.devOpsTool.jamadomain.core.LazyResource;
 
 public class JamaUser extends LazyResource {
@@ -20,7 +20,7 @@ public class JamaUser extends LazyResource {
     }
 
     @Override
-    protected void copyContentFrom(JamaDomainObject jamaDomainObject) {
+    public void copyContentFrom(JamaDomainObject jamaDomainObject) {
         checkType(JamaUser.class, jamaDomainObject);
 
         JamaUser user = (JamaUser) jamaDomainObject;

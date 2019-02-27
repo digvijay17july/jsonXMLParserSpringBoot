@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.IntegerFieldValue;
+import com.devOpsTool.jamadomain.values.IntegerFieldValue;
 
 public class IntegerField extends JamaField {
     @Override

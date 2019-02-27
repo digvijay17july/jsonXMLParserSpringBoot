@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.TextBoxFieldValue;
+import com.devOpsTool.jamadomain.values.TextBoxFieldValue;
 
 public class TextBoxField extends JamaField {
     @Override

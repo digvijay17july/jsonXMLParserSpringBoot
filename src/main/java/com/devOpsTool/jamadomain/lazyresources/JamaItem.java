@@ -5,7 +5,7 @@ import com.devOpsTool.exception.JsonException;
 import com.devOpsTool.exception.RestClientException;
 import com.devOpsTool.jamadomain.JamaLocation;
 import com.devOpsTool.jamadomain.LockStatus;
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaDomainObject;
 import com.devOpsTool.jamadomain.core.LazyResource;
 import com.devOpsTool.jamadomain.stagingresources.StagingItem;
 import com.devOpsTool.jamadomain.values.JamaFieldValue;
@@ -80,7 +80,7 @@ public class JamaItem extends LazyResource implements JamaParent {
     
 
     @Override
-    protected void copyContentFrom(JamaDomainObject jamaDomainObject) {
+    public void copyContentFrom(JamaDomainObject jamaDomainObject) {
         checkType(JamaItem.class, jamaDomainObject);
 
         JamaItem item = (JamaItem) jamaDomainObject;

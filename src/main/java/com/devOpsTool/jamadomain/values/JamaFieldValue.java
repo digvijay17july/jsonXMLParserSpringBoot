@@ -2,8 +2,8 @@ package com.devOpsTool.jamadomain.values;
 
 import com.devOpsTool.exception.JamaTypeMismatchException;
 import com.devOpsTool.exception.RestClientException;
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.jamadomain.core.LazyResource;
 import com.devOpsTool.jamadomain.fields.JamaField;
 

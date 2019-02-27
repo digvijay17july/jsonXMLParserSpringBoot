@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.UserFieldValue;
+import com.devOpsTool.jamadomain.values.UserFieldValue;
 
 public class UserField extends JamaField {
     @Override

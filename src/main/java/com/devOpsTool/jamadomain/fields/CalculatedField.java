@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.CalculatedFieldValue;
+import com.devOpsTool.jamadomain.values.CalculatedFieldValue;
 
 public class CalculatedField extends JamaField {
     @Override

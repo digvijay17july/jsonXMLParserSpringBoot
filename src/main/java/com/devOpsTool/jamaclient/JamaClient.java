@@ -1,8 +1,8 @@
 package com.devOpsTool.jamaclient;
 
 import com.devOpsTool.dao.ParserDao;
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.json.JsonHandler;
 import org.springframework.web.client.RestClientException;
 

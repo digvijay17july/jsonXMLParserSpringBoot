@@ -2,7 +2,7 @@ package com.devOpsTool.jamadomain.stagingresources;
 
 import com.devOpsTool.JamaParent;
 import com.devOpsTool.exception.RestClientException;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.jamadomain.lazyresources.JamaItem;
 import com.devOpsTool.jamadomain.lazyresources.JamaItemType;
 import com.devOpsTool.jamadomain.lazyresources.JamaRelationship;

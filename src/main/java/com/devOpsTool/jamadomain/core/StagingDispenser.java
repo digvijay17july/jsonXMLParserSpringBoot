@@ -2,6 +2,7 @@ package com.devOpsTool.jamadomain.core;
 
 import com.devOpsTool.JamaParent;
 import com.devOpsTool.exception.RestClientException;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.jamadomain.lazyresources.JamaItem;
 import com.devOpsTool.jamadomain.lazyresources.JamaItemType;
 import com.devOpsTool.jamadomain.lazyresources.JamaRelationship;
@@ -11,7 +12,7 @@ import com.devOpsTool.jamadomain.stagingresources.StagingRelationship;
 
 public class StagingDispenser extends StagingFactory {
 
-    StagingDispenser() {}
+    public StagingDispenser() {}
 
     @Override
     protected StagingItem createStagingItem() {
@@ -19,7 +20,7 @@ public class StagingDispenser extends StagingFactory {
     }
 
     @Override
-    protected StagingItem createStagingItem(JamaItem jamaItem) throws RestClientException {
+    public StagingItem createStagingItem(JamaItem jamaItem) throws RestClientException {
         return super.createStagingItem(jamaItem);
     }
 
@@ -35,7 +36,7 @@ public class StagingDispenser extends StagingFactory {
     }
 
     @Override
-    protected StagingRelationship createStagingRelationship(JamaRelationship jamaRelationship) throws RestClientException {
+    public StagingRelationship createStagingRelationship(JamaRelationship jamaRelationship) throws RestClientException {
         return super.createStagingRelationship(jamaRelationship);
     }
 }

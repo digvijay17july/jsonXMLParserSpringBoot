@@ -1,7 +1,7 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.lazyresources.PickList;
-import com.jamasoftware.services.restclient.jamadomain.values.MultiSelectFieldValue;
+import com.devOpsTool.jamadomain.lazyresources.PickList;
+import com.devOpsTool.jamadomain.values.MultiSelectFieldValue;
 
 public class MultiSelectField extends JamaField {
     private PickList pickList;

@@ -1,7 +1,7 @@
 package com.devOpsTool.jamaclient;
 
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaInstance;
 import org.springframework.web.client.RestClientException;
 
 import java.util.ArrayList;

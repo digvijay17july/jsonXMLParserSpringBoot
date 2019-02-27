@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.TestCaseStatusFieldValue;
+import com.devOpsTool.jamadomain.values.TestCaseStatusFieldValue;
 
 public class TestCaseStatusField extends JamaField {
     @Override

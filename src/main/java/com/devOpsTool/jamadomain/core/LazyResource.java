@@ -1,6 +1,7 @@
 package com.devOpsTool.jamadomain.core;
 
 import com.devOpsTool.exception.RestClientException;
+import com.devOpsTool.jamaServices.JamaDomainObject;
 import com.devOpsTool.jamadomain.lazyresources.LazyBase;
 
 public abstract class LazyResource extends LazyBase implements JamaDomainObject {
@@ -11,7 +12,7 @@ public abstract class LazyResource extends LazyBase implements JamaDomainObject 
 
     protected abstract String getResourceUrl();
 
-    protected abstract void copyContentFrom(JamaDomainObject jamaDomainObject);
+    public abstract void copyContentFrom(JamaDomainObject jamaDomainObject);
 
     protected abstract void writeContentTo(JamaDomainObject jamaDomainObject);
 

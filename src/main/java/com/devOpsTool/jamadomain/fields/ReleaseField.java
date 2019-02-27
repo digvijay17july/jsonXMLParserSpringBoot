@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.ReleaseFieldValue;
+import com.devOpsTool.jamadomain.values.ReleaseFieldValue;
 
 public class ReleaseField extends JamaField {
     @Override

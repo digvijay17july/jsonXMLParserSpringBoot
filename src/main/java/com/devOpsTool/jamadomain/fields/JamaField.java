@@ -1,7 +1,7 @@
 package com.devOpsTool.jamadomain.fields;
 
 import com.devOpsTool.jamadomain.SerializableJamaDomainObject;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.jamadomain.values.JamaFieldValue;
 
 public abstract class JamaField implements SerializableJamaDomainObject {

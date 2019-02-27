@@ -1,6 +1,6 @@
 package com.devOpsTool.json;
 
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaDomainObject;
 import com.devOpsTool.jamadomain.stagingresources.StagingRelease;
 
 public class JsonStagingRelease extends StagingRelease {

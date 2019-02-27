@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.RichTextFieldValue;
+import com.devOpsTool.jamadomain.values.RichTextFieldValue;
 
 public class RichTextField extends JamaField {
     @Override

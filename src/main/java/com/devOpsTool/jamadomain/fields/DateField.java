@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.fields;
 
-import com.jamasoftware.services.restclient.jamadomain.values.DateFieldValue;
+import com.devOpsTool.jamadomain.values.DateFieldValue;
 
 public class DateField extends JamaField {
     @Override

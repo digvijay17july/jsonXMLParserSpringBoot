@@ -1,7 +1,7 @@
 package com.devOpsTool;
 
 import com.devOpsTool.exception.RestClientException;
-import com.devOpsTool.jamadomain.core.JamaInstance;
+import com.devOpsTool.jamaServices.JamaInstance;
 import com.devOpsTool.jamadomain.lazyresources.JamaItem;
 
 import java.util.List;

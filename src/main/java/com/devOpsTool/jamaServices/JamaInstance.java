@@ -1,13 +1,16 @@
-package com.devOpsTool.jamadomain.core;
+package com.devOpsTool.jamaServices;
 
 import com.devOpsTool.config.JamaConfig;
 import com.devOpsTool.exception.RestClientException;
 import com.devOpsTool.jamaclient.JamaClient;
+import com.devOpsTool.jamadomain.core.LazyResource;
+import com.devOpsTool.jamadomain.core.StagingDispenser;
 import com.devOpsTool.jamadomain.lazyresources.*;
 import com.devOpsTool.jamadomain.stagingresources.StagingItem;
 import com.devOpsTool.jamadomain.stagingresources.StagingRelationship;
 import com.devOpsTool.util.CompareUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -15,6 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class JamaInstance implements JamaDomainObject {
     private JamaClient jamaClient;
 

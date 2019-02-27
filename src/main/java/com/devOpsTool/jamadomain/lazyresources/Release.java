@@ -1,6 +1,6 @@
 package com.devOpsTool.jamadomain.lazyresources;
 
-import com.devOpsTool.jamadomain.core.JamaDomainObject;
+import com.devOpsTool.jamaServices.JamaDomainObject;
 import com.devOpsTool.jamadomain.core.LazyResource;
 import com.devOpsTool.util.DateUtil;
 
