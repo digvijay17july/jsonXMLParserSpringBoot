@@ -1,5 +1,6 @@
 package com.devOpsTool;
 
+import com.devOpsTool.config.JamaConfig;
 import com.devOpsTool.service.ParserService;
 import com.devOpsTool.service.ParserServiceImpl;
 import org.slf4j.Logger;
@@ -15,8 +16,13 @@ import org.springframework.scheduling.annotation.Scheduled;
 @SpringBootApplication
 public class JsonToXmlParserApplication {
 	private Logger LOGGER= LoggerFactory.getLogger(JsonToXmlParserApplication.class);
-	@Autowired
 	ParserService parserService;
+	JamaConfig jamaConfig;
+
+	public JsonToXmlParserApplication(ParserService parserService, JamaConfig jamaConfig) {
+		this.parserService = parserService;
+		this.jamaConfig = jamaConfig;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(JsonToXmlParserApplication.class, args);
@@ -36,4 +42,6 @@ public class JsonToXmlParserApplication {
 		}
 		LOGGER.info("Exit.. JsonToXmlParserApplication.performAction");
 	}
+
+
 }

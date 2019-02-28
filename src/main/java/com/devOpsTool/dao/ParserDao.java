@@ -22,6 +22,7 @@ public interface ParserDao {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Basic " + base64Creds);
         headers.setContentType(MediaType.APPLICATION_JSON);
+        if(null!=headersMap)
         for (Map.Entry<String, String> entry : headersMap.entrySet()) {
             headers.add(entry.getKey(), entry.getValue());
         }
