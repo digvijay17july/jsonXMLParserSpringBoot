@@ -1,5 +1,6 @@
 package com.devOpsTool.service;
 
+import com.devOpsTool.config.JamaConfig;
 import com.devOpsTool.dao.ParserDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,11 +17,12 @@ public class ParserServiceImpl implements ParserService {
     private Logger LOGGER= LoggerFactory.getLogger(ParserServiceImpl.class);
     @Autowired
     ParserDao parserDao;
-
+@Autowired
+    JamaConfig jamaConfig;
     @Override
     public String getDataFromServer() {
         LOGGER.info("Entering.. ParserServiceImpl.getDataFromServer");
-        String projectJsonData=parserDao.getDataFromServer();
+        String projectJsonData=parserDao.getDataFromServer(jamaConfig.getBaseUrl(),jamaConfig.getUsername(),jamaConfig.getPassword());
         LOGGER.info("EXit.. ParserServiceImpl.getDataFromServer");
         return projectJsonData;
     }

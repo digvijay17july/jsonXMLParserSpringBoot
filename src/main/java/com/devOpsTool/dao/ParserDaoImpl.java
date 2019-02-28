@@ -36,28 +36,17 @@ public class ParserDaoImpl implements ParserDao {
     }
 
     @Override
-    public String getDataFromServer() {
+    public String getDataFromServer(String url, String username, String password) {
         LOGGER.info("Entering.. ParserDaoImpl.getDataFromServer");
-        String body = "{\n" +
-                "\"firstName\":\"mohita\",\n" +
-                "\"password\":\"sfsfsf\",\n" +
-                "\"lastName\":\"singh\",\n" +
-                "\"mobileNo\":9650938605,\n" +
-                "\"address\":\"krlgkelrg\",\n" +
-                "\"grossSalary\":900000,\n" +
-                "\"active\":true,\n" +
-                "\"username\":\"digvijay17july\",\n" +
-                "\"age\":55.0\n" +
-                "}";
-        /*
+        String body = null;
 
-         //Uncomment this file to add server call
+        //Uncomment this file to add server call
 
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-        ResponseEntity<String> responseEntity = restTemplate.exchange(toolConfiguration.getServerProperties().get("url"), HttpMethod.POST, new HttpEntity<String>(null, httpHeaders), String.class);
-        body=responseEntity.getBody();
-        */
+        HttpHeaders httpHeaders = getHeadersWithBasicAuth(username, password, null);
+
+        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.POST, new HttpEntity<String>(null, httpHeaders), String.class);
+        body = responseEntity.getBody();
+
         LOGGER.info("EXit.. ParserDaoImpl.getDataFromServer");
         return body;
     }
